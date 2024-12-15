@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebelion - Test</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Lewy panel -->
+        <div id="left-panel">
+            <h3>Statystyki</h3>
+            <p>Poziom: <span id="level">1</span></p>
+            <p>Doświadczenie: <span id="experience">0</span> / <span id="next-level">100</span></p>
+            <div id="health-bar-container">
+                <p>Zdrowie: <span id="hp">100/100</span></p>
+                <div id="health-bar" class="progress-bar"></div>
+            </div>
+            <h3>Surowce</h3>
+            <div id="resources">
+                <!-- Surowce będą wyświetlane dynamicznie -->
+            </div>
+        </div>
+
+        <!-- Centralny panel -->
+        <div id="center-panel">
+            <h2>Opcje wydobycia</h2>
+            <div id="extraction-options">
+                <!-- Opcje wydobycia będą dynamicznie generowane -->
+            </div>
+        </div>
+        
+
+        <!-- Prawy panel -->
+        <div id="right-panel">
+            <h3>Kategorie</h3>
+            <button onclick="loadCategory('exploration')">Eksploracja</button>
+            <button onclick="loadCategory('extraction')">Wydobycie</button>
+            <button onclick="loadCategory('inventory')">Ekwipunek</button>
+        </div>
+
+        <!-- Dolne menu -->
+        <footer id="bottom-menu">
+            <button onclick="saveManager.saveGame()">Zapisz grę</button>
+            <button onclick="saveManager.loadGame()">Wczytaj grę</button>
+            <button onclick="saveManager.resetGame()">Resetuj grę</button>
+        </footer>
+    </div>
+
+    <!-- Skrypty -->
+    <script src="../js/core/monitor.js"></script>
+    <script src="../js/core/saveManager.js"></script>
+    <script src="../js/core/game_logic.js"></script>
+    <script src="../js/core/responsiveness.js"></script>
+    <script src="../js/modules/extraction.js"></script>
+    <script src="../js/modules/exploration.js"></script>
+    <script src="../js/modules/inventory.js"></script>
+    <script src="../js/modules/skill_progression.js"></script>
+    <script src="../js/modules/action_handlers.js"></script>
+    <script src="../js/modules/cooldowns.js"></script>
+    <script src="../js/ui/ui.js"></script>
+</body>
+</html>

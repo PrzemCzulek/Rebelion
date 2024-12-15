@@ -1,0 +1,57 @@
+{
+    "extraction": {
+        "woodcutting": {
+            "name": "Ścinanie Drewna",
+            "cooldown": 3000,
+            "resource": "wood",
+            "xp": 1,
+            "unlockLevel": 1,
+            "bonusRequirement": 10,
+            "nextTier": "hardwood"
+        },
+        "hardwood": {
+            "name": "Ścinanie Twardego Drewna",
+            "cooldown": 4000,
+            "resource": "hardwood",
+            "xp": 2,
+            "unlockLevel": 5,
+            "bonusRequirement": 15,
+            "nextTier": null
+        },
+        "mining": {
+            "name": "Kopanie Kamieni",
+            "cooldown": 5000,
+            "resource": "stone",
+            "xp": 1,
+            "unlockLevel": 1,
+            "bonusRequirement": 10,
+            "nextTier": "iron"
+        },
+        "iron": {
+            "name": "Kopanie Żelaza",
+            "cooldown": 6000,
+            "resource": "iron",
+            "xp": 2,
+            "unlockLevel": 5,
+            "bonusRequirement": 15,
+            "nextTier": null
+        }
+    },
+    "crafting": {
+        "blacksmithing": {
+            "name": "Kowalstwo",
+            "recipes": {
+                "iron_sword": {
+                    "ingredients": {
+                        "iron_ingot": 2,
+                        "wood": 1
+                    },
+                    "result": {
+                        "item": "iron_sword",
+                        "quantity": 1
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "wood": {
+        "name": "Drewno",
+        "type": "material",
+        "description": "Podstawowy surowiec pozyskiwany z lasów."
+    },
+    "stone": {
+        "name": "Kamień",
+        "type": "material",
+        "description": "Trwały materiał budowlany wydobywany z kopalni."
+    },
+    "iron": {
+        "name": "żelazo",
+        "type": "material",
+        "description": "Wytrzymały metal wykorzystywany w rzemiośle i budowie."
+    },
+    "gold": {
+        "name": "Złoto",
+        "type": "material",
+        "description": "Cenny metal wykorzystywany w handlu i tworzeniu biżuterii."
+    }
+}

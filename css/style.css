@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left-panel, #right-panel {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#center-panel {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#bottom-menu {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#health-bar {
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Style dla eksploracji */
+#exploration button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#exploration button:hover {
+    background-color: #0056b3;
+}
+
+/* Style dla wydobycia */
+#extraction-menu button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#extraction-menu button:hover {
+    background-color: #0056b3;
+}
+
+#extraction-options .action-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#extraction-options button {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+#extraction-options button.active {
+    background-color: green;
+    color: white;
+    animation: blink 1s infinite alternate;
+}
+
+#extraction-options button:hover {
+    background-color: #e0e0e0;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+#extraction-options .progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.3s linear;
+}
